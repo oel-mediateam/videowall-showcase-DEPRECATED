@@ -1,0 +1,102 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald);
+
+html,
+body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	line-height: normal;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto;
+	margin: 0 auto -60px;
+}
+header {
+	width: auto;
+	height: 100px;
+	background-color: #444444;
+	padding:0 2%;
+	clear: both;
+}
+header section.logo {
+	width: 35%;
+	float:left;
+}
+header nav {
+	display: none;
+}
+footer {
+	width: auto;
+	height: 25px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
+	color:#FFFFFF;
+	background-color: #444444;
+	text-transform: uppercase;
+	padding:15px 20px 20px 20px;
+}
+
+/* tablet */
+@media screen and (min-width: 50em) {
+	
+	header section.logo {
+		width: 30%;
+		float:left;
+	}
+	
+	header nav {
+		display: block;
+		width:70%;
+		height: inherit;
+		text-align: right;
+		float: left;
+	}
+	header nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		line-height: 0px;
+		height: inherit;
+	}
+	header nav ul li {
+		display: inline-block;
+		margin-right:15px;
+		height: inherit;
+	}
+	header nav ul li:last-child {
+		margin-right: 0px;
+	}
+	header nav ul li a,
+	header nav ul li a:visited {
+		display: block;
+		min-width: 30px;
+		height: 56px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 12px;
+		line-height: normal;
+		color: #CCCCCB;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 44px 5px 0px 5px;
+	}
+	header nav ul li a:hover {
+		background-color: #3FA1A1;
+	}
+	
+}
+
+/* desktop */
+@media screen and (min-width: 63.75em) {
+	
+	header nav ul li a,
+	header nav ul li a:visited {
+		padding: 44px 10px 0px 10px;
+	}
+	
+}
